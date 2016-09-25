@@ -1,5 +1,16 @@
 body {
   margin: 0;
+  background-color: #187;
 }
-
+@import 'common/fonts.sass';
 @import 'common/greating';
+@import 'common/sprite';
+
+// пример использования спрайта
+.vk{
+	@include sprite($vk);
+}
+// пример использования шрифта
+.test_font{
+	font-family: 'sansus_regular', sans-serif;
+}
